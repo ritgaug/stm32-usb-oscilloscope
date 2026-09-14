@@ -1,14 +1,14 @@
 # STM32 USB Oscilloscope
 
-A two-channel, USB-streaming oscilloscope built from scratch — schematic, PCB, and firmware — as a way to actually learn embedded systems design rather than just read about it.
+A two-channel, USB-streaming oscilloscope built from scratch, schematic, PCB, and firmware, as a way to actually learn embedded systems design rather than just read about it.
 
-**Status:** 🚧 In progress — currently at schematic / breadboard stage.
+**Status:** 🚧 In progress, currently at schematic / breadboard stage.
 
 ## Why this project
 
-I'm a computer engineering student heading into embedded systems roles, and I wanted a project that forced me through the *entire* pipeline — not just writing code, but making real hardware decisions: reading datasheets, sizing power rails, choosing peripherals, and figuring out why a design works instead of just copying one that does. An oscilloscope felt like a good fit: it touches analog input, ADC/DMA, a display, USB communication, and real-time firmware concerns all in one device.
+I'm a computer engineering student heading into embedded systems roles, and I wanted a project that forced me through the *entire* pipeline, not just writing code, but making real hardware decisions: reading datasheets, sizing power rails, choosing peripherals, and figuring out why a design works instead of just copying one that does. An oscilloscope felt like a good fit: it touches analog input, ADC/DMA, a display, USB communication, and real-time firmware concerns all in one device.
 
-This repo is my running log of that process — the decisions, the mistakes, and (eventually) the finished thing.
+This repo is my running log of that process, the decisions, the mistakes, and (eventually) the finished thing.
 
 ## What it does
 
@@ -43,4 +43,4 @@ See [`docs/`](./docs) for the full requirements list, BOM, and design notes as t
 
 ---
 
-More detail and a demo video coming as this gets built out — check back or see the commit history for progress.
+More detail and a demo video coming as this gets built out, check back or see the commit history for progress.
