@@ -2,7 +2,7 @@
 
 A two channel, USB streaming oscilloscope built from scratch, schematic, PCB, and firmware, as a way to actually learn embedded systems design rather than just read about it.
 
-**Status:** In progress, currently at schematic stage.
+**Status:** In progress, schematic complete, moving to breadboard prototyping next.
 
 ## Why this project
 
@@ -33,6 +33,9 @@ This repo is my running log of that process, the decisions, the mistakes, and ev
 - Single 3.3V power rail, since both the MCU and LCD run on 3.3V after checking each part's datasheet
 - Followed ST's application note for decoupling capacitor placement on the MCU, and confirmed the LCD module already has its own onboard decoupling before deciding not to add extra ones
 - Firmware will be built around a hybrid interrupt/DMA/main loop architecture: DMA handles ADC sampling directly, lightweight interrupts flag button and timer events, and the main loop handles slower work like display rendering and data transmission, so nothing blocks or gets missed
+- Configured all peripherals (SPI, ADC, GPIO, USB, SWD, UART) in STM32CubeMX, including working around a shared GPIO interrupt line constraint
+- Built a full USB powered supply chain, from USB connector through a 3.3V linear regulator, including CC1/CC2 pull downs per the USB peripheral spec
+- Wired LCD, push buttons, LEDs with current limiting resistors, dual BNC signal inputs, and an SWD debug header, completing the schematic
 
 ## Tools and stack
 
